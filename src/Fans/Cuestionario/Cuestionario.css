@@ -1,0 +1,45 @@
+.containerC{
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+.cuestionario{
+    margin-top: 3%;
+}
+
+.sectionC{
+    border: 2px solid rgb(100, 98, 98);
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.labelC{
+    display: block;
+    padding: 7px;
+    border-radius: 7px;
+    cursor: pointer;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
+}
+
+.labelC:hover{
+    background: #A2A2A2;
+}
+
+.buttonC{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    background-color: #76d7c8;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.buttonC:hover{
+    background: rgb(100, 98, 98);
+    color: #fff;
+}

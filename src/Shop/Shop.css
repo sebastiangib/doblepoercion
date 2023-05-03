@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Sedgwick Ave Display', cursive;
+}
+
+.container-all{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 40px;
+}
+
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-box a{
+    text-decoration: none;
+    color: black;
+}
+
+.box{
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.box:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+.box .icon,
+.box h4,
+.box p{
+    position: relative;
+    z-index: 1;
+    transition: all 400ms;
+}
+
+.box-icon{
+    font-size: 40px;
+    transform: translateY(30px);
+}
+
+.box:hover .icon{
+    color: white;
+    font-size: 30px;
+    transform: translateY(0);
+}
+
+.box h4,
+.box p{
+    margin-top: 10px;
+}
+
+.box h4{
+    font-size: 30px;
+    transform: translateY(30px);
+}
+
+.box:hover h4{
+    transform: translateY(0);
+    color: white;
+}
+
+.box p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+}
+
+.box .background-hover{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(100, 98, 98), rgb(151, 145, 145));
+}
+
+.box:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+ 
+/* Cambiar color de las cajas */
+
+/* Box1 */
+.box1 .icon{
+    color: #3dc315;
+}
+
+.box1 .background-hover{
+    background: linear-gradient(to bottom, #3dc315, #fdb42a);
+    transition: all 750ms;
+}
+
+/* Box2 */
+.box2 .icon{
+    color: #0090ea;
+}
+
+.box2 .background-hover{
+    background: linear-gradient(to bottom, #00d3d3, #0090ea); 
+    top: -170px;
+    left: -250px;
+    transition: all 750ms;
+}
+
+/* Box3 */
+.box3 .icon{
+    color: #9d00f0;
+}
+
+.box3 .background-hover{
+    background: linear-gradient(to bottom, #d300cb, #9d00f0); 
+    top: 170px;
+    left: 500px;
+    transition: all 750ms;
+}
+
+/* Box4 */
+.box4 .icon{
+    color: #ffa700;
+}
+
+.box4 .background-hover{
+    background: linear-gradient(to bottom, #dd0f0f, #ffa700); 
+    top: -170px;
+    left: 500px;
+    transition: all 750ms;
+}
+
+/* Box5 */
+.box5 .icon{
+    color: #ea003f;
+}
+
+.box5 .background-hover{
+    background: linear-gradient(to bottom, #e33a67, #ea003f); 
+    top: 170px;
+    left: 500px;
+    transition: all 750ms;
+}
+
+.cardS {
+    width: 100%;
+    height: 1100px;
+    border: 1px solid;
+    display: flex;
+    margin-left: 2px;
+    margin-right: 2px;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+  }
+
+  .cardS img {
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .cardS h3 {
+    height: 50px;
+    margin: 10px;
+  }
+  
+  .cardS h4 {
+    height: 70px;
+    margin: 10px;
+    margin-top: -50px;
+  }
+  
+  .cardS p {
+    height: 50px;
+    margin: 5px;
+  }
+  
+
+  .neon{
+    font-size: 6em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #3dc315,
+    0 0 25px #3dc315,
+    0 0 50px #3dc315,
+    0 0 100px #3dc315;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+    text-align: center;
+  }
+  
+  .neon1{
+    font-size: 6em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #0090ea,
+    0 0 25px #0090ea,
+    0 0 50px #0090ea,
+    0 0 100px #0090ea;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+    text-align: center;
+  }
+
+  .neon2{
+    font-size: 6em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #9d00f0,
+    0 0 25px #9d00f0,
+    0 0 50px #9d00f0,
+    0 0 100px #9d00f0;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+    text-align: center;
+  }
+  
+  .neon3{
+    font-size: 6em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #ffa700,
+    0 0 25px #ffa700,
+    0 0 50px #ffa700,
+    0 0 100px #ffa700;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+    text-align: center;
+  }
+
+  .neon4{
+    font-size: 6em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #ea003f,
+    0 0 25px #ea003f,
+    0 0 50px #ea003f,
+    0 0 100px #ea003f;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+    text-align: center;
+  }
+
+.actions{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+  }
+
+  .actions i{
+    font-size: 24px;
+    transition: all .7s ease;
+    color: var(--currente-color2);
+    cursor: pointer;
+  }
+
+  .actions:hover i{
+    transform: scale(1.3);
+  }
