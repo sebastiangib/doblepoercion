@@ -396,6 +396,14 @@ let parches = [
   }
 ] //Fin mapeo
 
+function quehagocuandosedeelevento(evento){
+  (evento.target.classList.add("blancoYnegro"))
+}
+
+function quehagocuandosedeelotroevento(evento){
+  (evento.target.classList.remove("blancoYnegro"))
+}
+
   return (
     <>
        <div className="d-flex justify-content-center align-items-center h-100">
@@ -494,7 +502,7 @@ let parches = [
                 <div className="cardS shadow">
                   <h3 className="text-center">{gorra.nombre}</h3>
                   <hr />
-                  <img src={gorra.foto} alt="" className="img-fluid w-100" />
+                  <img src={gorra.foto} alt="" className="img-fluid w-100" onMouseOver={quehagocuandosedeelevento} onMouseLeave={quehagocuandosedeelotroevento} />
                   <hr />
                   <br />
                   <h4 className="text-center">{gorra.descripcion}</h4>
