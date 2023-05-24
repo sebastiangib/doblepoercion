@@ -1,4 +1,6 @@
 import '../Musica/Musica.css'
+import {consultarCanciones} from "../services/servicioCanciones"
+import { useState,useEffect } from 'react'
 
 export function Musica(){
 
@@ -68,10 +70,27 @@ export function Musica(){
             id:"8"
         }
     ]
-  
-    return(
-        <>
-        <div className="bodyMU">
+
+    const [canciones,setCanciones]=useState(null)
+    const [estacargando,setEstacargando]=useState(true)
+
+    useEffect(function(){
+        consultarCanciones().then(function(respuesta){
+            setCanciones(respuesta.tracks)
+            setEstacargando(false)
+        })
+    },[])
+
+    if(estacargando){
+        return(
+            <>
+            <h1>Estoy cargando</h1>
+            </>
+        )
+    }else{
+        return(
+            <>
+            <div className="bodyMU">
         {musica.map(function(music){
             return(
                 <div key={music.id}>
@@ -95,9 +114,15 @@ export function Musica(){
         })
         }
         </div>
-        </>
-    )
-
-
+            {
+                canciones.map(function(cancion){
+                    return(
+                        <audio controls src={cancion.preview_url}></audio>
+                    )
+                })
+            }
+            </>
+        )
+    }
 }
 
