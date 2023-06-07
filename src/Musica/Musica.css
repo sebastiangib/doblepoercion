@@ -6,9 +6,11 @@
     min-height: 100vh;
 }
 
+
+
 .cardMU{
     position: relative;
-    width: 300px;
+    width: 250px;
     height: 350px;
     margin: 20px;
 }
@@ -18,9 +20,10 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 10px;
+    border-radius: 30%;
     overflow: hidden;
     transition: .5s;
+    align-items: center;
 }
 
 .cardMU .front{
@@ -56,6 +59,7 @@
     justify-content: space-between;
     text-align: center;
     box-shadow: 0 5px 10px #000;
+    align-items: center;
 }
 
 .cardMU .back .link{
@@ -85,3 +89,32 @@
 .cardMU:hover .back{
     transform: perspective(600px) rotateY(360deg);
 }
+
+.gif{
+    margin-top: 10%;
+}
+
+audio{
+    width: 100%;
+}
+
+.bannerMU{background-image: url("https://firebasestorage.googleapis.com/v0/b/musicosg-8fe65.appspot.com/o/fondomusica.jpg?alt=media&token=5e1b57a5-e4df-4cdd-81e2-86b48a6fd70d");
+    background-position:top center;     
+    background-size:cover; 
+    height:200%;
+    background-attachment: fixed;
+    color: #fff; }
+
+    .neonMU{
+        font-size: 4em;
+        font-weight: 500;
+        color: #fff;
+        text-shadow: 0 0 5px #000,
+        0 0 25px #000,
+        0 0 50px #000,
+        0 0 100px #000;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        transition: 1s;
+        text-align: center;
+      }

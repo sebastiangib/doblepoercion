@@ -7,7 +7,6 @@ import { Shop } from "../Shop/Shop"
 import { Fans } from "../Fans/Formulario/Fans"
 import { Cuestionario } from "../Fans/Cuestionario/Cuestionario"
 import { Musica } from "../Musica/Musica"
-import { Carga } from "../Hook/Carga"
 
 
 export function Rutas(){
@@ -21,7 +20,6 @@ export function Rutas(){
       <Route path="/musica" element={<Musica />} />
       <Route path="/fans" element={<Fans />} />
       <Route path="/cuestionario" element={<Cuestionario />} />
-      <Route path="/hooks" element={<Carga />} />
     </Routes>
     </>
     )
